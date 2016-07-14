@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">  
       <link rel="stylesheet" type="text/css" href="style.css">
       <link href="lightbox.css" rel="stylesheet">
+      <script src="//code.jquery.com/jquery-latest.js"></script>
   </head>
+  
+  <script>
+        $(document).ready(function(){
+            $(".masonryImage").hide(0).delay(500).fadeIn(3000)
+        });
+  </script>
   
   <body>
 	<div class="wrapper">
@@ -113,7 +120,7 @@
           </a>
       </div>
      </div>
-    <script src="//code.jquery.com/jquery-latest.js"></script>
+    
     <script src="lightbox.js"></script>
 <script>
     $("a").attr( 'data-lightbox', 'gallery' );
